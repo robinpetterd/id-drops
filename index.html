@@ -7,31 +7,45 @@
     <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.2.0.min.css" />
     <script src="jquery-mobile/jquery.js"></script>
     <script src="jquery-mobile/jquery.mobile-1.2.0.min.js"></script>
-
-
 <style type="text/css">
 <!--
 
 -->
 </style>
 
+<script type="text/javascript">
+
+this.randomIdea = function(){
+
+	var length = $("#ideas").children().length; 
+	
+
+};
+
+$(document).ready(function(){	
+	randomIdea();
+
+	$.mobile.changePage("#idea2", null, false, true);
+});
+
+</script>
+
+
 
 </head>
 
 <body>
-
-	<div data-role="header">
-		<h1>Multi-page</h1>
-	</div>
     
-<div id="ideas"><div class="idea">	<div class="statement">
+<div id="ideas">
+
+<div id="idea1" data-role="page">	<div class="statement">
 					Use an unacceptable color
 		</div>
 	
 			
 		<img class="images" src="images/Use an unacceptable color.png" />
 			<div class="credit"><div class="name">
-					Ariel design
+					Ariel design <a href="#random"></a>
 			  </div>
 				<div class="link">
 				 http://www.flickr.com/photos/10362081@N00/32952658/
@@ -41,7 +55,11 @@
 		</image>	
         
         </div>
-	<div class="idea">	<div class="statement">
+        
+        
+        
+        
+	<div id="idea2" data-role="page">	<div class="statement">
 				 Remove a restriction
 			
 			
@@ -60,7 +78,7 @@
 			</div>
 		
 	</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 				 Collaboration
 				 Discussion         
 				 Group work
@@ -81,7 +99,7 @@
 			</div>
 		
 	</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					Use Audio
 		</div>
 	
@@ -96,7 +114,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					Use a tried and tested recipe
 					Learn from your experience
 		</div>
@@ -112,7 +130,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					Courage!
 		</div>
 	
@@ -127,7 +145,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					What context would look right?
 		</div>
 	
@@ -142,7 +160,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					Voice your suspicions
 		</div>
 	
@@ -157,7 +175,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					Is there something missing?
 		</div>
 	
@@ -172,7 +190,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					What resources might be needed?
 		</div>
 	
@@ -187,7 +205,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					What are the systems to support this?
 		</div>
 	
@@ -202,7 +220,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					Timeframes?
 		</div>
 	
@@ -217,7 +235,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Listen to the voice
 		</div>
 	
@@ -232,7 +250,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Reflection
 		</div>
 	
@@ -247,7 +265,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What can you consider as resources?
 		</div>
 	
@@ -262,7 +280,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Readings
 		</div>
 	
@@ -277,7 +295,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What is the simplest solution?
 		</div>
 	
@@ -292,7 +310,7 @@
 			</div>
 		
 		</image>	</div>	
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					      Demonstration
 		</div>
 	
@@ -307,7 +325,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Is the information current?
 		</div>
 	
@@ -322,7 +340,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What must an expert in this field never forget?
 		</div>
 	
@@ -337,7 +355,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Presentations
 		</div>
 	
@@ -352,7 +370,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Do your learners have mobile phones?
 		</div>
 	
@@ -367,7 +385,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Where can your learners access computers and the internet?
 		</div>
 	
@@ -382,7 +400,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Look at it through rose coloured glasses.
 					   What do you see?
 		</div>
@@ -398,7 +416,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   A video can be played over and over again
 		</div>
 	
@@ -413,7 +431,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Turn it upside down
 		</div>
 	
@@ -428,7 +446,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Plan for dialogue between learners
 		</div>
 	
@@ -443,7 +461,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Is there a manual available?
 		</div>
 	
@@ -458,7 +476,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   How could you add colour to their day?
 		</div>
 	
@@ -473,7 +491,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What mistakes did you make last time?
 		</div>
 	
@@ -488,7 +506,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Could sections be recorded? 
 					   Consider audio, video and dvd
 		</div>
@@ -504,7 +522,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Online Chat or Instant Messaging
 		</div>
 	
@@ -519,7 +537,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What do your learners have in their pockets?
 		</div>
 	
@@ -534,7 +552,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Balance individual and collaborative work
 		</div>
 	
@@ -550,7 +568,7 @@
 		
 		</image>	</div>
 	
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Use video conferencing
 		</div>
 	
@@ -565,7 +583,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Workplace investigations or problem-solving
 		</div>
 	
@@ -580,7 +598,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Where are the learners located?
 		</div>
 	
@@ -595,7 +613,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Role plays
 		</div>
 	
@@ -610,7 +628,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Contextualised materials
 		</div>
 	
@@ -625,7 +643,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Call your mother and ask her what to do
 		</div>
 	
@@ -640,7 +658,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Investigations
 		</div>
 	
@@ -655,7 +673,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Build flow into the learning
 		</div>
 	
@@ -670,7 +688,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Build community
 		</div>
 	
@@ -685,7 +703,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What does a workplace in your sector look like?
 		</div>
 	
@@ -700,7 +718,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Do you require registration, security, or other controls? What purpose do they serve?
 		</div>
 	
@@ -715,7 +733,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Research
 		</div>
 	
@@ -730,7 +748,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Investigation_2
 		</div>
 	
@@ -745,7 +763,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Forums for discussion - face to face and online
 		</div>
 	
@@ -760,7 +778,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Collaborative tools (1)
 		</div>
 	
@@ -775,7 +793,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Collaborative tools (2)
 		</div>
 	
@@ -790,7 +808,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Group projects
 		</div>
 	
@@ -805,7 +823,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Flowcharts, ‘roadmaps’
 		</div>
 	
@@ -820,7 +838,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Forums
 		</div>
 	
@@ -835,7 +853,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Checklists
 		</div>
 	
@@ -850,7 +868,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Web cams for remote, yet close contact
 		</div>
 	
@@ -865,7 +883,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Field Trips
 		</div>
 	
@@ -880,7 +898,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Recognition processes
 		</div>
 	
@@ -895,7 +913,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What are the essential workplace issues?
 		</div>
 	
@@ -910,7 +928,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Design tasks to build expertise
 		</div>
 	
@@ -925,7 +943,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Storyboard to clarify the sequence and sections
 		</div>
 	
@@ -940,7 +958,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Technical specifications?
 		</div>
 	
@@ -955,7 +973,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Are there boundaries?
 		</div>
 	
@@ -970,7 +988,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   Use graphics to communicate
 		</div>
 	
@@ -985,7 +1003,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   What sparks an interest in this?
 		</div>
 	
@@ -1000,7 +1018,7 @@
 			</div>
 		
 		</image>	</div>
-	<div class="idea">	<div class="statement">
+	<div class="idea" data-role="page">	<div class="statement">
 					   How long should the task take?
 		</div>
 	
