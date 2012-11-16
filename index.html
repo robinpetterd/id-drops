@@ -4,9 +4,17 @@
 <meta charset="UTF-8">
 <title>ID Drops</title>
 
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+
     <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.2.0.min.css" />
     <script src="jquery-mobile/jquery.js"></script>
     <script src="jquery-mobile/jquery.mobile-1.2.0.min.js"></script>
+    <link rel="stylesheet" href="themes/iddrops.min.css" />
+
+
+<link rel="stylesheet" href="style.css" />
+
+
 <style type="text/css">
 <!--
 
@@ -16,50 +24,42 @@
 <script type="text/javascript">
 
 this.randomIdea = function(){
-
-	var length = $("#ideas").children().length; 
-	
-
+	var length = $("ul#ideas").children().length; 
+	var ran = Math.floor(Math.random()*length) + 1;
+	$.mobile.changePage("#ideas li:nth-child(" + ran + ")", { transition: "flip"}, false, true);
 };
 
-$(document).ready(function(){	
-	randomIdea();
 
-	$.mobile.changePage("#idea2", null, false, true);
+$(document).ready(function(){	
+	$("li").click(function() {
+			randomIdea();
+	});
+	
+	//randomIdea();
+	
 });
 
 </script>
 
-
-
 </head>
 
-<body>
+<body class="ui-mobile" data-theme="a">
     
-<div id="ideas">
+<ul id="ideas"  data-theme="a">
 
-<div id="idea1" data-role="page">	<div class="statement">
+<li class="idea" data-role="page" style="background-image:url('images/Use an unacceptable color.png')">	    
+    <div class="statement">
 					Use an unacceptable color
-		</div>
+   </div>
 	
 			
-		<img class="images" src="images/Use an unacceptable color.png" />
 			<div class="credit"><div class="name">
 					Ariel design <a href="#random"></a>
 			  </div>
 				<div class="link">
 				 http://www.flickr.com/photos/10362081@N00/32952658/
 				</div>
-			</div>
-		
-		</image>	
-        
-        </div>
-        
-        
-        
-        
-	<div id="idea2" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 				 Remove a restriction
 			
 			
@@ -75,10 +75,7 @@ $(document).ready(function(){
 				<div class="link">
 					http://www.flickr.com/photos/knilfo/10253515/
 				</div>
-			</div>
-		
-	</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 				 Collaboration
 				 Discussion         
 				 Group work
@@ -96,10 +93,7 @@ $(document).ready(function(){
 				<div class="link">
 					http://www.flickr.com/photos/blese/11458154/
 				</div>
-			</div>
-		
-	</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					Use Audio
 		</div>
 	
@@ -111,10 +105,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/smiling_da_vinci/14785644/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					Use a tried and tested recipe
 					Learn from your experience
 		</div>
@@ -127,10 +118,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/add/27093544/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					Courage!
 		</div>
 	
@@ -142,10 +130,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/mamabarns/32282972/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					What context would look right?
 		</div>
 	
@@ -157,10 +142,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/blese/3269070/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					Voice your suspicions
 		</div>
 	
@@ -172,10 +154,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/blese/3309179/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					Is there something missing?
 		</div>
 	
@@ -187,10 +166,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/w5nyv/33343234/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					What resources might be needed?
 		</div>
 	
@@ -202,10 +178,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/w5nyv/33343494/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					What are the systems to support this?
 		</div>
 	
@@ -217,10 +190,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/teckbrain/34903647/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					Timeframes?
 		</div>
 	
@@ -232,10 +202,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/teckbrain/34903677/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Listen to the voice
 		</div>
 	
@@ -247,10 +214,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/reyhan/3587780/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Reflection
 		</div>
 	
@@ -262,10 +226,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/trekguy/38943785/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What can you consider as resources?
 		</div>
 	
@@ -277,10 +238,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/meesho/39005502/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Readings
 		</div>
 	
@@ -292,10 +250,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/msjacoby/43547991/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What is the simplest solution?
 		</div>
 	
@@ -307,10 +262,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/opencage/41930076/
 				</div>
-			</div>
-		
-		</image>	</div>	
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					      Demonstration
 		</div>
 	
@@ -322,10 +274,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/opencage/41930076/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Is the information current?
 		</div>
 	
@@ -337,10 +286,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/eversion/43986575/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What must an expert in this field never forget?
 		</div>
 	
@@ -352,10 +298,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/frank-wouters/44076674/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Presentations
 		</div>
 	
@@ -367,10 +310,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/jonassmith/45663651/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Do your learners have mobile phones?
 		</div>
 	
@@ -382,10 +322,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/bepster/45716858/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Where can your learners access computers and the internet?
 		</div>
 	
@@ -397,10 +334,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/myelectricsheep/47285119/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Look at it through rose coloured glasses.
 					   What do you see?
 		</div>
@@ -413,10 +347,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/a_sorense/46241457/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   A video can be played over and over again
 		</div>
 	
@@ -428,10 +359,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/jakecaptive/47521849/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Turn it upside down
 		</div>
 	
@@ -443,10 +371,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/sugashane/47850301/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Plan for dialogue between learners
 		</div>
 	
@@ -458,10 +383,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/edyson/48278466/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Is there a manual available?
 		</div>
 	
@@ -473,10 +395,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/luismi/48600424/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   How could you add colour to their day?
 		</div>
 	
@@ -488,10 +407,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/k1da1/48837471/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What mistakes did you make last time?
 		</div>
 	
@@ -503,10 +419,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/yourbartender/49381955/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Could sections be recorded? 
 					   Consider audio, video and dvd
 		</div>
@@ -519,10 +432,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/hipocondriaca/13167744/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Online Chat or Instant Messaging
 		</div>
 	
@@ -534,10 +444,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/wysz/13252711/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What do your learners have in their pockets?
 		</div>
 	
@@ -549,10 +456,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/wysz/13252711/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Balance individual and collaborative work
 		</div>
 	
@@ -564,11 +468,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/mig/15962665/
 				</div>
-			</div>
-		
-		</image>	</div>
-	
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Use video conferencing
 		</div>
 	
@@ -580,10 +480,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/wysz/17395584/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Workplace investigations or problem-solving
 		</div>
 	
@@ -595,10 +492,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/ianus/49483889/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Where are the learners located?
 		</div>
 	
@@ -610,10 +504,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/lnx/6257130/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Role plays
 		</div>
 	
@@ -625,10 +516,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/provia400f/8159493/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Contextualised materials
 		</div>
 	
@@ -640,10 +528,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/yaapraaf/9038451/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Call your mother and ask her what to do
 		</div>
 	
@@ -655,10 +540,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/lwr/9257237/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Investigations
 		</div>
 	
@@ -670,10 +552,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/tsunaminotes/9311282/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Build flow into the learning
 		</div>
 	
@@ -685,10 +564,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/bip/17606480/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Build community
 		</div>
 	
@@ -700,10 +576,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/stewdean/17469731/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What does a workplace in your sector look like?
 		</div>
 	
@@ -715,10 +588,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/stevan/24601898/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Do you require registration, security, or other controls? What purpose do they serve?
 		</div>
 	
@@ -730,10 +600,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/owenblacker/31008002/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Research
 		</div>
 	
@@ -745,10 +612,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/iambigred/31702079/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Investigation_2
 		</div>
 	
@@ -760,10 +624,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/blese/3270172/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Forums for discussion - face to face and online
 		</div>
 	
@@ -775,10 +636,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/andynelson/34514307/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Collaborative tools (1)
 		</div>
 	
@@ -790,10 +648,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/cote/3838483/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Collaborative tools (2)
 		</div>
 	
@@ -805,10 +660,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/cote/3838483/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Group projects
 		</div>
 	
@@ -820,10 +672,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/veloena/40126097/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Flowcharts, ‘roadmaps’
 		</div>
 	
@@ -835,10 +684,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/tiggywinkle/4035326/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Forums
 		</div>
 	
@@ -850,10 +696,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/laughingsquid/42467129/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Checklists
 		</div>
 	
@@ -865,10 +708,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/si08han/46387990/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Web cams for remote, yet close contact
 		</div>
 	
@@ -880,10 +720,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/spoons/46687133/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Field Trips
 		</div>
 	
@@ -895,10 +732,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/darwishh/46778890/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Recognition processes
 		</div>
 	
@@ -910,10 +744,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/robotson/48607915/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What are the essential workplace issues?
 		</div>
 	
@@ -925,10 +756,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/wouldpkr/48631351/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Design tasks to build expertise
 		</div>
 	
@@ -940,10 +768,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/neilrickards/5694065/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Storyboard to clarify the sequence and sections
 		</div>
 	
@@ -955,10 +780,7 @@ $(document).ready(function(){
 				<div class="link">
 				 nolink
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Technical specifications?
 		</div>
 	
@@ -970,10 +792,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/scuddr/3503004/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Are there boundaries?
 		</div>
 	
@@ -985,10 +804,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/meg/50920280/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   Use graphics to communicate
 		</div>
 	
@@ -1000,10 +816,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/thatgirl/5879723/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   What sparks an interest in this?
 		</div>
 	
@@ -1015,10 +828,7 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/wouldpkr/49607171/
 				</div>
-			</div>
-		
-		</image>	</div>
-	<div class="idea" data-role="page">	<div class="statement">
+			</div></li><li class="idea" data-role="page">	<div class="statement">
 					   How long should the task take?
 		</div>
 	
@@ -1030,10 +840,6 @@ $(document).ready(function(){
 				<div class="link">
 				 http://www.flickr.com/photos/yourbartender/49936753/
 				</div>
-			</div>
-		
-		</image>	</div>
-	
-</div>
+			</div></li></ul>
 </body>
 </html>
