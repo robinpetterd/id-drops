@@ -1,12 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+
 body {
-	background-color:#333;
 	margin:60px;
 	margin-right:100px;
 }
 
+#ideals {
+}
+	
 
 .idea {
 	
@@ -24,7 +28,7 @@ body {
 	
 	webkit-border-radius: 28px 20px 20px 20px;-moz-border-radius: 28px 20px 20px 20px;border-radius: 28px 20px 20px;
 	
-	height:300px;
+
 	
 	
 }
