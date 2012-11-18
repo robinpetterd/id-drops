@@ -23,15 +23,22 @@
 
 this.randomIdea = function(){
 	var length = $("ul#ideas").children().length; 
-	var ran = Math.floor(Math.random()*length) + 1;
+	var ran = Math.floor(Math.random()*length) + 2;
 	$.mobile.changePage("#ideas li:nth-child(" + ran + ")", { transition: "fade"});
 };
 
-
 $(document).ready(function(){	
-	$("li").click(function() {
+	$("li.idea").click(function() {
 			randomIdea();
 	});
+	
+	$("#start").click( function()
+           {
+            randomIdea();
+           }
+      );
+	  
+	  
 	
 	//randomIdea();
 	
@@ -42,16 +49,21 @@ $(document).ready(function(){
 </head>
 
 <body class="ui-mobile" data-theme="a">
-    
-<ul id="ideas"  data-theme="">
 
+
+<ul id="ideas"   data-theme="">
+
+<li id="start-page" data-role="page">	            
+        <a href="#" data-role="button"  data-theme="a" class="" id="start">Start</a>
+</li>
+            
 <li class="idea" data-role="page" style="background-image:url('images/Useanunacceptablecolor.jpg')">	    
     <div class="statement">
 					Use an unacceptable color
    </div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Ariel design 
 			  </div>
 				<div class="link">
@@ -65,7 +77,7 @@ $(document).ready(function(){
 		
 		
 		</div>
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 	Remove a restriction		
 			  </div>
 				
@@ -82,7 +94,7 @@ $(document).ready(function(){
 		
 		
 		</div>
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Blese
 			  </div>
 				
@@ -98,7 +110,7 @@ $(document).ready(function(){
 		    </div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Smiling_da_vinci
 			  </div>
 				<div class="link">
@@ -110,7 +122,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Add.me
 			  </div>
 				<div class="link">
@@ -121,7 +133,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Saffanna
 			  </div>
 				<div class="link">
@@ -132,7 +144,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Blese
 			  </div>
 				<div class="link">
@@ -143,7 +155,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Blese			
 			  </div>
 				<div class="link">
@@ -154,7 +166,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Abraxas3d
 			  </div>
 				<div class="link">
@@ -165,7 +177,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Abraxas3d
 			  </div>
 				<div class="link">
@@ -176,7 +188,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -187,7 +199,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -198,7 +210,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Reyhan Dhuny
 			  </div>
 				<div class="link">
@@ -206,7 +218,7 @@ $(document).ready(function(){
 				</div>
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/Reflection.jpg')">	<div class="statement">
 					   Reflection
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -217,7 +229,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Meesho
 			  </div>
 				<div class="link">
@@ -225,7 +237,7 @@ $(document).ready(function(){
 				</div>
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/Readings.jpg')">	<div class="statement">
 					   Readings
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					Msjacoby
 			  </div>
 				<div class="link">
@@ -236,7 +248,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 OpenCage
 			  </div>
 				<div class="link">
@@ -247,7 +259,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					OpenCage
 			  </div>
 				<div class="link">
@@ -258,7 +270,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Eversion
 			  </div>
 				<div class="link">
@@ -269,7 +281,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -280,7 +292,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Agent Smith
 			  </div>
 				<div class="link">
@@ -291,7 +303,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Beppie K
 			  </div>
 				<div class="link">
@@ -302,7 +314,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					myelectricsheep	
 			  </div>
 				<div class="link">
@@ -314,7 +326,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 A_sorense
 			  </div>
 				<div class="link">
@@ -325,7 +337,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					@boetter
 			  </div>
 				<div class="link">
@@ -336,7 +348,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 SugaShane
 			  </div>
 				<div class="link">
@@ -347,7 +359,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Esthr
 			  </div>
 				<div class="link">
@@ -358,7 +370,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Paloma+Luismi
 			  </div>
 				<div class="link">
@@ -369,7 +381,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 1000watt
 			  </div>
 				<div class="link">
@@ -380,7 +392,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					yourbartender
 			  </div>
 				<div class="link">
@@ -389,7 +401,7 @@ $(document).ready(function(){
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/Could sections be recorded.jpg')">	<div class="statement">
 					   Could sections be recorded? 
 					   Consider audio, video and dvd
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -397,7 +409,7 @@ $(document).ready(function(){
 				</div>
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/Online Chat or Instant Messaging.jpg')">	<div class="statement">
 					   Online Chat or Instant Messaging
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					Wysz
 			  </div>
 				<div class="link">
@@ -405,7 +417,7 @@ $(document).ready(function(){
 				</div>
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/What do your learners have in their pockets.jpg')">	<div class="statement">
 					   What do your learners have in their pockets?
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					 Wysz
 			  </div>
 				<div class="link">
@@ -413,7 +425,7 @@ $(document).ready(function(){
 				</div>
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/Balance individual and collaborative work.jpg')">	<div class="statement">
 					   Balance individual and collaborative work
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					Miguelb	
 			  </div>
 				<div class="link">
@@ -424,7 +436,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Wysz
 			  </div>
 				<div class="link">
@@ -435,7 +447,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Ianus
 			  </div>
 				<div class="link">
@@ -446,7 +458,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Thomas Favre-Bulle
 			  </div>
 				<div class="link">
@@ -457,7 +469,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 FullFrameFotography
 			  </div>
 				<div class="link">
@@ -468,7 +480,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Raaf
 			  </div>
 				<div class="link">
@@ -479,7 +491,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Leo Reynolds			
 			  </div>
 				<div class="link">
@@ -489,7 +501,7 @@ $(document).ready(function(){
 					   Investigations
 		</div>
 	
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -500,7 +512,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Claudecf			
 			  </div>
 				<div class="link">
@@ -511,7 +523,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Stew Dean
 			  </div>
 				<div class="link">
@@ -522,7 +534,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Navets
 			  </div>
 				<div class="link">
@@ -533,7 +545,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					OwenBlacker
 			  </div>
 				<div class="link">
@@ -544,7 +556,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Iambigred
 			  </div>
 				<div class="link">
@@ -555,7 +567,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Blese
 			  </div>
 				<div class="link">
@@ -566,7 +578,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					ReverendMungo
 			  </div>
 				<div class="link">
@@ -577,7 +589,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Cote
 			  </div>
 				<div class="link">
@@ -588,7 +600,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Cote
 			  </div>
 				<div class="link">
@@ -599,7 +611,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Lalallallala
 			  </div>
 				<div class="link">
@@ -607,7 +619,7 @@ $(document).ready(function(){
 				</div>
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/roadmaps.jpg')">	<div class="statement">
 					   Flowcharts, ‘roadmaps’
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					Tiggywinkle	
 			  </div>
 				<div class="link">
@@ -618,7 +630,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Laughing Squid
 			  </div>
 				<div class="link">
@@ -629,7 +641,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -640,7 +652,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -650,7 +662,7 @@ $(document).ready(function(){
 					   Field Trips
 		</div>
 
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -661,7 +673,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Robotson
 			  </div>
 				<div class="link">
@@ -672,7 +684,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Wouldpkr			
 			  </div>
 				<div class="link">
@@ -681,7 +693,7 @@ $(document).ready(function(){
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/Design tasks to build expertise.jpg')">	<div class="statement">
 					   Design tasks to build expertise
 		</div>
-				<div class="credit"><div class="name">
+				<div class="credit"><div class="name">Image credit:
 					 Neil Rickards			
 			  </div>
 				<div class="link">
@@ -691,7 +703,7 @@ $(document).ready(function(){
 					   Storyboard to clarify the sequence and sections
 		</div>
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					.......			
 			  </div>
 				<div class="link">
@@ -699,7 +711,7 @@ $(document).ready(function(){
 				</div>
 			</div></li><li class="idea" data-role="page" style="background-image:url('images/Technical.jpg')">	<div class="statement">
 					   Technical specifications?
-		</div><div class="credit"><div class="name">
+		</div><div class="credit"><div class="name">Image credit:
 					Scuddr			
 			  </div>
 				<div class="link">
@@ -709,7 +721,7 @@ $(document).ready(function(){
 					   Are there boundaries?
 		</div>
 	
-						<div class="credit"><div class="name">
+						<div class="credit"><div class="name">Image credit:
 					Meg Pickard
 			  </div>
 				<div class="link">
@@ -720,7 +732,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					 Thatgirl
 			  </div>
 				<div class="link">
@@ -731,7 +743,7 @@ $(document).ready(function(){
 		</div>
 	
 			
-			<div class="credit"><div class="name">
+			<div class="credit"><div class="name">Image credit:
 					Wouldpkr
 			  </div>
 				<div class="link">
@@ -741,7 +753,7 @@ $(document).ready(function(){
 					   How long should the task take?
 		</div>
 	
-						<div class="credit"><div class="name">
+						<div class="credit"><div class="name">Image credit:
 					Yourbartender
 			  </div>
 				<div class="link">
