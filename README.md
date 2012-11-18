@@ -1,6 +1,6 @@
 ## Overview ##
 
-ID drops is a mobile card deck to inspire creative instructional design.  
+ID drops is a mobile card deck to inspire creative instructional design for eLearning. 
 
 Text by Kirsty Sharp, Robin Petterd and also incorporates text from the Oblique Strategies cards by Brian Eno/Peter Schmidt. 
 
