@@ -6,9 +6,22 @@
  width:90%;
 }
 
+#start-page img {
+	text-align:center;
+}
+
+
 #start-page .about {
 	font-size:2em;
+	font-weight:100;
+	color:#999;
+	margin-top:2px;
 	
+}
+
+#start-page .app-credits {
+	font-size:.9em;
+	color:#999;	
 }
 
 body {
@@ -65,11 +78,11 @@ body {
 	position:absolute;
 	font-size:120%;
 	padding:6px;
-	bottom:10%;
+	bottom:15%;
 	margin-left:2%;
 	color:#FFF;
 	
-	width:25%;
+	width:30%;
 	
 	background-color:rgba(60,60,60,0.2);
 	

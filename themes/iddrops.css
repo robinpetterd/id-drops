@@ -15,20 +15,20 @@
 -----------------------------------------------------------------------------------------------------------*/
 
 .ui-bar-a {
-	border: 1px solid #b3b3b3 /*{a-bar-border}*/;
-	background: #67c748 /*{a-bar-background-color}*/;
-	color: #3e3e3e /*{a-bar-color}*/;
+	border: 1px solid #030303 /*{a-bar-border}*/;
+	background: #404040 /*{a-bar-background-color}*/;
+	color: #ffffff /*{a-bar-color}*/;
 	font-weight: bold;
-	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ #ffffff /*{a-bar-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #67c748 /*{a-bar-background-start}*/), to( #67c748 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #67c748 /*{a-bar-background-start}*/, #67c748 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #67c748 /*{a-bar-background-start}*/, #67c748 /*{a-bar-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #67c748 /*{a-bar-background-start}*/, #67c748 /*{a-bar-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #67c748 /*{a-bar-background-start}*/, #67c748 /*{a-bar-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #67c748 /*{a-bar-background-start}*/, #67c748 /*{a-bar-background-end}*/);
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 0px /*{a-bar-shadow-y}*/ 0px /*{a-bar-shadow-radius}*/ #ffffff /*{a-bar-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #474747 /*{a-bar-background-start}*/), to( #383838 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #474747 /*{a-bar-background-start}*/, #383838 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #474747 /*{a-bar-background-start}*/, #383838 /*{a-bar-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #474747 /*{a-bar-background-start}*/, #383838 /*{a-bar-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #474747 /*{a-bar-background-start}*/, #383838 /*{a-bar-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #474747 /*{a-bar-background-start}*/, #383838 /*{a-bar-background-end}*/);
 }
 .ui-bar-a .ui-link-inherit {
-	color: #3e3e3e /*{a-bar-color}*/;
+	color: #ffffff /*{a-bar-color}*/;
 }
 
 .ui-bar-a a.ui-link {
@@ -102,26 +102,26 @@
 
 .ui-btn-up-a {
 	border: 1px solid #cccccc /*{a-bup-border}*/;
-	background: #eeeeee /*{a-bup-background-color}*/;
+	background: #67c748 /*{a-bup-background-color}*/;
 	font-weight: bold;
-	color: #2f3e46 /*{a-bup-color}*/;
-	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #ffffff /*{a-bup-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff /*{a-bup-background-start}*/), to( #f1f1f1 /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient( #ffffff /*{a-bup-background-start}*/, #f1f1f1 /*{a-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient( #ffffff /*{a-bup-background-start}*/, #f1f1f1 /*{a-bup-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient( #ffffff /*{a-bup-background-start}*/, #f1f1f1 /*{a-bup-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient( #ffffff /*{a-bup-background-start}*/, #f1f1f1 /*{a-bup-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient( #ffffff /*{a-bup-background-start}*/, #f1f1f1 /*{a-bup-background-end}*/);
+	color: #ffffff /*{a-bup-color}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ 0px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #ffffff /*{a-bup-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #67c748 /*{a-bup-background-start}*/), to( #67c748 /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #67c748 /*{a-bup-background-start}*/, #67c748 /*{a-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #67c748 /*{a-bup-background-start}*/, #67c748 /*{a-bup-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #67c748 /*{a-bup-background-start}*/, #67c748 /*{a-bup-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #67c748 /*{a-bup-background-start}*/, #67c748 /*{a-bup-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #67c748 /*{a-bup-background-start}*/, #67c748 /*{a-bup-background-end}*/);
 }
 .ui-btn-up-a:visited,
 .ui-btn-up-a a.ui-link-inherit {
-	color: #2f3e46 /*{a-bup-color}*/;
+	color: #ffffff /*{a-bup-color}*/;
 }
 .ui-btn-hover-a {
 	border: 1px solid #bbbbbb /*{a-bhover-border}*/;
 	background: #dfdfdf /*{a-bhover-background-color}*/;
 	font-weight: bold;
-	color: #c2670f /*{a-bhover-color}*/;
+	color: #858585 /*{a-bhover-color}*/;
 	text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #ffffff /*{a-bhover-shadow-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #FFFFFF /*{a-bhover-background-start}*/), to( #b9b9b9 /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #FFFFFF /*{a-bhover-background-start}*/, #b9b9b9 /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
@@ -133,7 +133,7 @@
 .ui-btn-hover-a:visited,
 .ui-btn-hover-a:hover,
 .ui-btn-hover-a a.ui-link-inherit {
-	color: #c2670f /*{a-bhover-color}*/;
+	color: #858585 /*{a-bhover-color}*/;
 }
 .ui-btn-down-a {
 	border: 1px solid #bbbbbb /*{a-bdown-border}*/;
@@ -906,4 +906,3 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: auto;
 }
-			
