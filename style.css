@@ -15,10 +15,10 @@ body {
 .idea {
 
 	background-repeat:no-repeat;
-	background-size:100%;
-	padding:10px
+	background-size: 100%;
+	padding:10px;
+		
 	
-	width:80%;
 	
 	/*webkit-border-radius: 28px 20px 20px 20px;-moz-border-radius: 28px 20px 20px 20px;border-radius: 28px 20px 20px;*/
 	
@@ -29,31 +29,30 @@ body {
 
 .statement {
 	color:white;
-	font-size:320%;
-	font-weight:bold;
-	padding:6px;
-
-	margin-top:20%;
-	margin-left:2%;
-	
-	width:80%;
-	
-	background-color:rgba(60,60,60,0.5);
-	
-}
-
-.credit {
-	color:white;
-	font-size:120%;
+	font-size:280%;
 	font-weight:bold;
 	padding:6px;
 
 	margin-top:8%;
 	margin-left:2%;
 	
-	width:30%;
+	width:80%;
 	
-	background-color:rgba(60,60,60,0.5);
+	background-color:rgba(44,182,94,0.5);
+	
+}
+
+.credit {
+	position:absolute;
+	color:white;
+	font-size:120%;
+	padding:6px;
+	bottom:10%;
+	margin-left:2%;
+	
+	width:25%;
+	
+	background-color:rgba(60,60,60,0.2);
 	
 }
 
