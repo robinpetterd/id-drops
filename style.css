@@ -1,12 +1,28 @@
 @charset "UTF-8";
 /* CSS Document */
 
+#start-page {
+ padding:12px;
+ width:90%;
+}
+
+#start-page .about {
+	font-size:2em;
+	
+}
+
 body {
 	margin:0px;
 	margin-right:0px;
 	margin-left:0px;
 	padding:0px;
-	background:#333;
+	background-color: rgb(249, 249, 249);
+	background-clip: border-box;
+	background-color: rgb(249, 249, 249);
+		background-image: -webkit-linear-gradient(top, 
+		rgb(249, 249, 249), 
+		rgb(238, 238, 238));
+	background-origin: padding-box;
 }
 
 #ideals {
@@ -47,11 +63,11 @@ body {
 
 .credit {
 	position:absolute;
-	color:#999;
 	font-size:120%;
 	padding:6px;
 	bottom:10%;
 	margin-left:2%;
+	color:#FFF;
 	
 	width:25%;
 	
