@@ -2,7 +2,7 @@
 /* CSS Document */
 
 #start-page {
- padding:12px;
+ padding:22px;
  width:90%;
 }
 
@@ -12,17 +12,37 @@
 
 
 #start-page .about {
-	font-size:2em;
+	font-size:2.7em;
 	font-weight:100;
 	color:#999;
 	margin-top:2px;
-	
 }
 
 #start-page .app-credits {
 	font-size:.9em;
 	color:#999;	
+	float:left;
+	padding-left:22px;
+	padding-top:32px;
 }
+
+#start-page .app-credits img {
+	float:left;
+	width:327px;
+}
+
+#start-page .image-credit {
+	color:#999;	
+	float:left;
+	display:block;
+	width:50%;
+	padding-left:22px;
+	padding-top:18px;
+	
+}
+
+
+
 
 body {
 	margin:0px;
