@@ -7,19 +7,18 @@
 }
 
 #start-page img {
-	text-align:center;
 }
 
 
 #start-page .about {
-	font-size:2.7em;
+	font-size:1.8em;
 	font-weight:100;
 	color:#999;
 	margin-top:2px;
 }
 
 #start-page .app-credits {
-	font-size:.9em;
+	font-size:.8em;
 	color:#999;	
 	float:left;
 	padding-left:22px;
@@ -28,14 +27,14 @@
 
 #start-page .app-credits img {
 	float:left;
-	width:327px;
+	width:280px;
 }
 
 #start-page .image-credit {
 	color:#999;	
 	float:left;
 	display:block;
-	width:50%;
+	width:40%;
 	padding-left:22px;
 	padding-top:18px;
 	
@@ -81,7 +80,7 @@ body {
 
 .statement {
 	color:white;
-	font-size:280%;
+	font-size:250%;
 	font-weight:bold;
 	padding:6px;
 
@@ -96,13 +95,13 @@ body {
 
 .credit {
 	position:absolute;
-	font-size:120%;
+	font-size:110%;
 	padding:6px;
 	bottom:15%;
 	margin-left:2%;
 	color:#FFF;
 	
-	width:30%;
+	width:45%;
 	
 	background-color:rgba(60,60,60,0.2);
 	
